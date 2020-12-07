@@ -11,16 +11,16 @@ results = IC.search_people(name = None)
 
 
 # create a file imslp.txt to store data
-sys.stdout = open("imslp.txt", "w")
+sys.stdout = open("composers.txt", "w")
 
 # results is of type "set"
 for val in results:
-    l = list()
+    l = []
     for key, value in val.items():
-        if key == "intvals":
+        if key != "id" and key != "permlink":
             continue
-        l.append(key + ": " + value)
-    print(l)
+        l.append(value)
+    print(";".join(l))
 
-# close imslp.txt 
+# close composers.txt 
 sys.stdout.close()
