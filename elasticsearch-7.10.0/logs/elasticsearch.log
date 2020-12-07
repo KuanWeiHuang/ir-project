@@ -74,3 +74,4 @@
 [2020-12-07T16:49:29,134][INFO ][o.e.l.LicenseService     ] [Kenweide-MacBook-Pro.local] license [1440ae79-2b5c-4d34-96cd-26028781a5b3] mode [basic] - valid
 [2020-12-07T16:49:29,135][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [Kenweide-MacBook-Pro.local] Active license is now [BASIC]; Security is disabled
 [2020-12-07T16:49:29,137][INFO ][o.e.g.GatewayService     ] [Kenweide-MacBook-Pro.local] recovered [0] indices into cluster_state
+[2020-12-07T17:13:51,071][INFO ][o.e.c.m.MetadataCreateIndexService] [Kenweide-MacBook-Pro.local] [imslp] creating index, cause [api], templates [], shards [3]/[1]
