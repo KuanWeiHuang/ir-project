@@ -24,9 +24,6 @@ def get_setting():
 def get_composers_mappings():
     mappings = {
         "properties": {
-            "category": {
-                "type": "text"
-            },
             "name": {
                 "type": "text"
             },

@@ -19,6 +19,9 @@ for val in results:
     for key, value in val.items():
         if key != "id" and key != "permlink":
             continue
+        # Eliminate "Category:" and "," in id
+        if key == "id":
+            value = value[value.find(":") + 1:].replace(",", "")
         l.append(value)
     print(";".join(l))
 

@@ -77,3 +77,5 @@
 [2020-12-07T17:13:51,071][INFO ][o.e.c.m.MetadataCreateIndexService] [Kenweide-MacBook-Pro.local] [imslp] creating index, cause [api], templates [], shards [3]/[1]
 [2020-12-07T20:11:25,300][INFO ][o.e.c.m.MetadataMappingService] [Kenweide-MacBook-Pro.local] [imslp/meG5UE9fSKKzYNeJkrBakg] update_mapping [_doc]
 [2020-12-07T20:20:48,021][INFO ][o.e.c.m.MetadataMappingService] [Kenweide-MacBook-Pro.local] [imslp/meG5UE9fSKKzYNeJkrBakg] update_mapping [_doc]
+[2020-12-07T22:41:44,609][INFO ][o.e.c.m.MetadataDeleteIndexService] [Kenweide-MacBook-Pro.local] [imslp/meG5UE9fSKKzYNeJkrBakg] deleting index
+[2020-12-07T22:48:25,522][INFO ][o.e.c.m.MetadataCreateIndexService] [Kenweide-MacBook-Pro.local] [imslp] creating index, cause [api], templates [], shards [3]/[1]

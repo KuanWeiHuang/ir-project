@@ -4,10 +4,10 @@ def load_datas():
     datas = list()
     with open('composers.txt', 'r') as f:
         for data in f.readlines():
-            cid, link = data.replace('\n', '').split(';')
+            name, link = data.replace('\n', '').split(';')
             datas.append(
                 {
-                    "cid": cid,
+                    "name": name,
                     "link": link
                 }
             )
