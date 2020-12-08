@@ -1,22 +1,16 @@
 from elasticsearch import Elasticsearch
 
 def change_mappings(es):
-    body = get_composers_mappings()
+    body = get_works_mappings()
     es.indices.put_mapping(index='imslp', body=body)
 
 def get_works_mappings():
     mappings = {
         "properties": {
-            "title": {
-                "type": "text"
-            },
-            "category": {
-                "type": "text"
-            },
             "composer": {
                 "type": "text"
             },
-            "worktitle": {
+            "title": {
                 "type": "text"
             },
             "link": {
@@ -29,7 +23,7 @@ def get_works_mappings():
 def get_composers_mappings():
     mappings = {
         "properties": {
-            "cid": {
+            "name": {
                 "type": "text"
             },
             "link": {
