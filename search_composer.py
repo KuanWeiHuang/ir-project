@@ -5,7 +5,7 @@ def get_query():
     query = {
         "query": { 
             "match": {
-                "name": "Beethoven"
+                "composer": "Beethoven"
             }    
         }
     }
