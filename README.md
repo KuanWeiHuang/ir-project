@@ -16,5 +16,7 @@ Change to virtual environment: source ./venv/bin/activate
 1. run create_mapping.py to create mapping and setting
 2. run load_composer.py to load data from composers.txt to index imslp
 
-
+* Delete index
+1. run: [curl "http://localhost:9200/_cat/indices?v&h=i"] to get all existing indexes
+2. run: [curl -XDELETE "http://localhost:9200/imslp"] to delete index imslp
 

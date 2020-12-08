@@ -5,7 +5,7 @@ import json
 def create_index(es):
     body = dict()
     body['settings'] = get_setting()
-    body['mappings'] = get_composers_mappings()
+    body['mappings'] = get_imslp_mappings() # mapping can be changed according to the data 
     print(json.dumps(body))
     es.indices.create(index='imslp', body=body)
 
@@ -20,7 +20,6 @@ def get_setting():
 
     return settings
 
-
 def get_composers_mappings():
     mappings = {
         "properties": {
@@ -32,7 +31,25 @@ def get_composers_mappings():
             }
         }
     }
+    return mappings
 
+def get_imslp_mappings():
+    mappings = {
+        "properties": {
+            "composer": {
+                "type": "text"
+            },
+            "composerlink": {
+                "type": "text"
+            },
+            "title": {
+                "type": "text"
+            },
+            "titlelink": {
+                "type": "text"
+            }
+        }
+    }
     return mappings
 
 
