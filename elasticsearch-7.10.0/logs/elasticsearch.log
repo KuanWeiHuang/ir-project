@@ -2,3 +2,10 @@
 [2020-12-08T13:11:25,558][INFO ][o.e.c.m.MetadataCreateIndexService] [Kenweide-MacBook-Pro.local] [imslp] creating index, cause [api], templates [], shards [3]/[1]
 [2020-12-08T13:12:53,038][INFO ][o.e.c.m.MetadataDeleteIndexService] [Kenweide-MacBook-Pro.local] [imslp/VrJtMNTsR1alHTdnkTXm1Q] deleting index
 [2020-12-08T13:12:57,677][INFO ][o.e.c.m.MetadataCreateIndexService] [Kenweide-MacBook-Pro.local] [imslp] creating index, cause [api], templates [], shards [3]/[1]
+[2020-12-08T17:23:52,987][INFO ][o.e.x.m.MlDailyMaintenanceService] [Kenweide-MacBook-Pro.local] triggering scheduled [ML] maintenance tasks
+[2020-12-08T17:23:53,670][INFO ][o.e.x.m.a.TransportDeleteExpiredDataAction] [Kenweide-MacBook-Pro.local] Deleting expired data
+[2020-12-08T17:23:54,155][INFO ][o.e.x.m.j.r.UnusedStatsRemover] [Kenweide-MacBook-Pro.local] Successfully deleted [0] unused stats documents
+[2020-12-08T17:23:54,157][INFO ][o.e.x.m.a.TransportDeleteExpiredDataAction] [Kenweide-MacBook-Pro.local] Completed deletion of expired ML data
+[2020-12-08T17:23:54,158][INFO ][o.e.x.m.MlDailyMaintenanceService] [Kenweide-MacBook-Pro.local] Successfully completed [ML] maintenance task: triggerDeleteExpiredDataTask
+[2020-12-08T17:28:54,715][INFO ][o.e.c.m.MetadataDeleteIndexService] [Kenweide-MacBook-Pro.local] [imslp/kaSQrF6VTXGwtjCQu6mjUw] deleting index
+[2020-12-08T17:29:21,208][INFO ][o.e.c.m.MetadataCreateIndexService] [Kenweide-MacBook-Pro.local] [imslp] creating index, cause [api], templates [], shards [3]/[1]

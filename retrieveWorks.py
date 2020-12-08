@@ -38,4 +38,4 @@ for val in results:
 # close works.txt 
 sys.stdout.close()
 
-# ['id: 3 Morceaux, Op.15 (Rimsky-Korsakov, Nikolay)', 'type: 2', 'parent: Category:Rimsky-Korsakov, Nikolay', 'composer: Rimsky-Korsakov, Nikolay', 'worktitle: 3 Morceaux, Op.15', 'icatno: INR 33', 'pageid: 139008', 'permlink: https://imslp.org/wiki/3_Morceaux,_Op.15_(Rimsky-Korsakov,_Nikolay)']
+# Fasch Johann Friedrich ; Gloria in Excelsis Deo ; https://imslp.org/wiki/Gloria_in_Excelsis_Deo_(Fasch,_Johann_Friedrich)

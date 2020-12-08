@@ -20,3 +20,6 @@ Change to virtual environment: source ./venv/bin/activate
 1. run: [curl "http://localhost:9200/_cat/indices?v&h=i"] to get all existing indexes
 2. run: [curl -XDELETE "http://localhost:9200/imslp"] to delete index imslp
 
+* ConnectionTimeout errer
+1. connection will fail if we want to load too many data in one time
+2. separate data into few chunks to avoid the situation 
