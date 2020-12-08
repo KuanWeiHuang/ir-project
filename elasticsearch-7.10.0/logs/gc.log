@@ -3404,3 +3404,37 @@
 [2020-12-08T13:20:27.944+0000][12575][gc          ] GC(80) Pause Young (Normal) (G1 Evacuation Pause) 726M->139M(1024M) 150.169ms
 [2020-12-08T13:20:27.944+0000][12575][gc,cpu      ] GC(80) User=0.04s Sys=0.41s Real=0.15s
 [2020-12-08T13:20:27.944+0000][12575][safepoint   ] Safepoint "G1CollectForAllocation", Time since last: 728249848764 ns, Reaching safepoint: 4729168 ns, At safepoint: 151181370 ns, Total: 155910538 ns
+[2020-12-08T14:05:43.466+0000][12575][gc,start    ] GC(81) Pause Young (Normal) (G1 Evacuation Pause)
+[2020-12-08T14:05:43.467+0000][12575][gc,task     ] GC(81) Using 13 workers of 13 for evacuation
+[2020-12-08T14:05:43.469+0000][12575][gc,age      ] GC(81) Desired survivor size 40370176 bytes, new threshold 15 (max threshold 15)
+[2020-12-08T14:05:43.628+0000][12575][gc,age      ] GC(81) Age table with threshold 15 (max threshold 15)
+[2020-12-08T14:05:43.628+0000][12575][gc,age      ] GC(81) - age   1:      12464 bytes,      12464 total
+[2020-12-08T14:05:43.628+0000][12575][gc,age      ] GC(81) - age   2:      66112 bytes,      78576 total
+[2020-12-08T14:05:43.628+0000][12575][gc,age      ] GC(81) - age   3:    2286512 bytes,    2365088 total
+[2020-12-08T14:05:43.628+0000][12575][gc,age      ] GC(81) - age   4:     898408 bytes,    3263496 total
+[2020-12-08T14:05:43.628+0000][12575][gc,age      ] GC(81) - age   5:    3821576 bytes,    7085072 total
+[2020-12-08T14:05:43.628+0000][12575][gc,age      ] GC(81) - age   6:    4172904 bytes,   11257976 total
+[2020-12-08T14:05:43.628+0000][12575][gc,age      ] GC(81) - age   7:    1388520 bytes,   12646496 total
+[2020-12-08T14:05:43.628+0000][12575][gc,age      ] GC(81) - age   8:    6369528 bytes,   19016024 total
+[2020-12-08T14:05:43.628+0000][12575][gc,age      ] GC(81) - age   9:    1744552 bytes,   20760576 total
+[2020-12-08T14:05:43.628+0000][12575][gc,age      ] GC(81) - age  10:     797632 bytes,   21558208 total
+[2020-12-08T14:05:43.628+0000][12575][gc,age      ] GC(81) - age  11:    1043088 bytes,   22601296 total
+[2020-12-08T14:05:43.628+0000][12575][gc,age      ] GC(81) - age  12:    1105816 bytes,   23707112 total
+[2020-12-08T14:05:43.628+0000][12575][gc,age      ] GC(81) - age  13:     734504 bytes,   24441616 total
+[2020-12-08T14:05:43.628+0000][12575][gc,age      ] GC(81) - age  14:     707920 bytes,   25149536 total
+[2020-12-08T14:05:43.628+0000][12575][gc,age      ] GC(81) - age  15:     799744 bytes,   25949280 total
+[2020-12-08T14:05:43.628+0000][12575][gc,phases   ] GC(81)   Pre Evacuate Collection Set: 4.5ms
+[2020-12-08T14:05:43.628+0000][12575][gc,phases   ] GC(81)   Merge Heap Roots: 1.8ms
+[2020-12-08T14:05:43.628+0000][12575][gc,phases   ] GC(81)   Evacuate Collection Set: 108.7ms
+[2020-12-08T14:05:43.628+0000][12575][gc,phases   ] GC(81)   Post Evacuate Collection Set: 44.9ms
+[2020-12-08T14:05:43.628+0000][12575][gc,phases   ] GC(81)   Other: 2.3ms
+[2020-12-08T14:05:43.628+0000][12575][gc,heap     ] GC(81) Eden regions: 587->0(587)
+[2020-12-08T14:05:43.628+0000][12575][gc,heap     ] GC(81) Survivor regions: 27->27(77)
+[2020-12-08T14:05:43.628+0000][12575][gc,heap     ] GC(81) Old regions: 95->96
+[2020-12-08T14:05:43.628+0000][12575][gc,heap     ] GC(81) Archive regions: 2->2
+[2020-12-08T14:05:43.628+0000][12575][gc,heap     ] GC(81) Humongous regions: 18->18
+[2020-12-08T14:05:43.628+0000][12575][gc,metaspace] GC(81) Metaspace: 102007K(105596K)->102007K(105596K) NonClass: 88780K(91260K)->88780K(91260K) Class: 13226K(14336K)->13226K(14336K)
+[2020-12-08T14:05:43.628+0000][12575][gc          ] GC(81) Pause Young (Normal) (G1 Evacuation Pause) 726M->140M(1024M) 162.259ms
+[2020-12-08T14:05:43.628+0000][12575][gc,cpu      ] GC(81) User=0.03s Sys=0.47s Real=0.16s
+[2020-12-08T14:05:43.628+0000][12575][safepoint   ] Safepoint "G1CollectForAllocation", Time since last: 2715480714876 ns, Reaching safepoint: 4417184 ns, At safepoint: 162454634 ns, Total: 166871818 ns
+[2020-12-08T14:21:21.063+0000][12575][safepoint   ] Safepoint "Cleanup", Time since last: 937429518800 ns, Reaching safepoint: 5409638 ns, At safepoint: 66971 ns, Total: 5476609 ns
