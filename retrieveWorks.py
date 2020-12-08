@@ -33,7 +33,7 @@ for val in results:
                 l.append(v)
         else:
             l.append(value)
-    print(";".join(l))
+    print(" ; ".join(l))
 
 # close works.txt 
 sys.stdout.close()
