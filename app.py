@@ -1,8 +1,11 @@
 import os
 # import time
 import sys
+from query import search_query
+from music import Music
 from flask import Flask, request, redirect, url_for, render_template
 from werkzeug.utils import secure_filename
+
 
 app = Flask(__name__)
 
@@ -21,20 +24,9 @@ def upload_file():
 
 @app.route('/queryResult/<query>')
 def query_result(query):
-    tStart = time.time()
-    # pass the query to the ranking function and get the 20 result docs
-    docs = ranking.ranking3(query)
-
-    tEnd = time.time()
-    # get the execution duration and round it to the second decimal place
-    executeTime = round(tEnd - tStart, 2)
-    # # get the invertedList size in KB
-    size = round(sys.getsizeof(docs) / 1024.0, 2)
-
+    count, datas = search_query(query)    
     # use the index2.html template to show the result
-    return render_template('index2.html',header='CS6200 Information Retrieval', sub_header='Kuan-Wei Huang',
-                            list_header="Execution Time: " + str(executeTime) + " seconds, Space used: " + str(size) + " KB",
-                            query=query, docs=docs)
+    return render_template('index2.html',header='IMSLP Project', query=query, datas=datas, count=count)
 
 if __name__ == '__main__':
     app.run(debug=True)

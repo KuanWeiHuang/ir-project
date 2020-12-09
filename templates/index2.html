@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IMSLP Project</title>
+
+</head>
+
+<body>
+<!--CONTAINER-->
+<div class="container">
+    <h1>{{ header }}</h1>
+
+    <p>Here are results of query "{{ query }}"</p>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Composer</th>
+        </tr>
+        {#loop through docs and render them in list#}
+        {% for item in datas %}
+        <tr>
+            <td><a href="{{ item.titlelink }}">{{ item.title }}</a></td>
+            <td><a href="{{ item.composerlink }}">{{ item.composer }}</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+</body>
+</html>

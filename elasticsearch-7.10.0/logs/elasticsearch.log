@@ -1,7 +1,0 @@
-[2020-12-09T09:51:56,060][INFO ][o.e.x.s.SnapshotRetentionTask] [Kenweide-MacBook-Pro.local] starting SLM retention snapshot cleanup task
-[2020-12-09T09:51:56,304][INFO ][o.e.x.s.SnapshotRetentionTask] [Kenweide-MacBook-Pro.local] there are no repositories to fetch, SLM retention snapshot cleanup task complete
-[2020-12-09T09:58:02,478][INFO ][o.e.x.m.MlDailyMaintenanceService] [Kenweide-MacBook-Pro.local] triggering scheduled [ML] maintenance tasks
-[2020-12-09T09:58:02,530][INFO ][o.e.x.m.a.TransportDeleteExpiredDataAction] [Kenweide-MacBook-Pro.local] Deleting expired data
-[2020-12-09T09:58:02,582][INFO ][o.e.x.m.j.r.UnusedStatsRemover] [Kenweide-MacBook-Pro.local] Successfully deleted [0] unused stats documents
-[2020-12-09T09:58:02,585][INFO ][o.e.x.m.a.TransportDeleteExpiredDataAction] [Kenweide-MacBook-Pro.local] Completed deletion of expired ML data
-[2020-12-09T09:58:02,585][INFO ][o.e.x.m.MlDailyMaintenanceService] [Kenweide-MacBook-Pro.local] Successfully completed [ML] maintenance task: triggerDeleteExpiredDataTask
