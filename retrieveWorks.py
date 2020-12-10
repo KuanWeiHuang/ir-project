@@ -1,19 +1,14 @@
 from imslp import client
 import sys
 
-
-
 # create a instance of ImslpClient
 IC = client.ImslpClient
 
 # get all works
 results = IC.search_works(intersect = False)
 
-
-
 # create a file imslp.txt to store data
 sys.stdout = open("works.txt", "w")
-
 
 # skip id, type and parent later
 not_include = set(['id', 'type', 'parent'])

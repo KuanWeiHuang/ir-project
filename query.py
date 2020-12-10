@@ -6,7 +6,7 @@ def get_query(userInput):
     query = {
         "query":{
             "bool":{
-                "should":[
+                "must":[
                     {
                         "simple_query_string":{
                             "query": userInput,
@@ -30,11 +30,13 @@ def search_query(userInput):
     es = Elasticsearch(hosts='127.0.0.1', port=9200)
     query = get_query(userInput)
     result = es.search(index='imslp', body=query)
-    count = result["hits"]["total"]["value"]
+    # count = result["hits"]["total"]["value"]
+    # count = 100 if count > 100 else count
     resultlist = []
     for entry in result["hits"]["hits"]:
         data = entry["_source"]
         resultlist.append(Music(data["composer"], data["composerlink"], data["title"], data["titlelink"]))
+    count = len(resultlist)
     return count, resultlist
 
 
@@ -43,10 +45,11 @@ if __name__ == "__main__":
     es = Elasticsearch(hosts='127.0.0.1', port=9200)
     query = get_query(userInput)
     result = es.search(index='imslp', body=query)
-    count = result["hits"]["total"]["value"]
-    print("count", count)
-    resultlist = []
-    for entry in result["hits"]["hits"]:
-        data = entry["_source"]
-        resultlist.append(Music(data["composer"], data["composerlink"], data["title"], data["titlelink"]))
+    print(result["hits"]["hits"])
+    # count = result["hits"]["total"]["value"]
+    # print("count", count)
+    # resultlist = []
+    # for entry in result["hits"]["hits"]:
+    #     data = entry["_source"]
+    #     resultlist.append(Music(data["composer"], data["composerlink"], data["title"], data["titlelink"]))
     # return resultlist

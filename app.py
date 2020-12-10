@@ -1,4 +1,4 @@
-import os
+# import os
 # import time
 import sys
 from query import search_query
@@ -26,7 +26,7 @@ def upload_file():
 def query_result(query):
     count, datas = search_query(query)    
     # use the index2.html template to show the result
-    return render_template('index2.html',header='IMSLP Project', query=query, datas=datas, count=count)
+    return render_template('index2.html',header='IMSLP / Petrucci Music Library', query=query, datas=datas, count=count)
 
 if __name__ == '__main__':
     app.run(debug=True)
